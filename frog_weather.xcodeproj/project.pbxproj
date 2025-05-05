@@ -11,6 +11,15 @@
 		3F749E6F2DC89F6E00ED0DB6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F749E6E2DC89F6E00ED0DB6 /* ContentView.swift */; };
 		3F749E712DC89F6F00ED0DB6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F749E702DC89F6F00ED0DB6 /* Assets.xcassets */; };
 		3F749E742DC89F6F00ED0DB6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F749E732DC89F6F00ED0DB6 /* Preview Assets.xcassets */; };
+		3F749E812DC8AC1400ED0DB6 /* WeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F749E802DC8AC1400ED0DB6 /* WeatherModel.swift */; };
+		3F749E832DC8ADF400ED0DB6 /* WeatherCondition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F749E822DC8ADF400ED0DB6 /* WeatherCondition.swift */; };
+		3F749E852DC8AF8400ED0DB6 /* WeatherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F749E842DC8AF8400ED0DB6 /* WeatherViewModel.swift */; };
+		3F749E882DC8B1F900ED0DB6 /* MainWeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F749E872DC8B1F900ED0DB6 /* MainWeatherView.swift */; };
+		3F749E8B2DC8B28400ED0DB6 /* ForecastRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F749E8A2DC8B28400ED0DB6 /* ForecastRow.swift */; };
+		3F749E8E2DC8B60B00ED0DB6 /* TopBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F749E8D2DC8B60B00ED0DB6 /* TopBarView.swift */; };
+		3F749E902DC8B63400ED0DB6 /* CurrentWeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F749E8F2DC8B63400ED0DB6 /* CurrentWeatherView.swift */; };
+		3F749E932DC8B65C00ED0DB6 /* ForecastListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F749E922DC8B65C00ED0DB6 /* ForecastListView.swift */; };
+		3F749E952DC8B67500ED0DB6 /* BottomBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F749E942DC8B67500ED0DB6 /* BottomBarView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +28,15 @@
 		3F749E6E2DC89F6E00ED0DB6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		3F749E702DC89F6F00ED0DB6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3F749E732DC89F6F00ED0DB6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3F749E802DC8AC1400ED0DB6 /* WeatherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherModel.swift; sourceTree = "<group>"; };
+		3F749E822DC8ADF400ED0DB6 /* WeatherCondition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherCondition.swift; sourceTree = "<group>"; };
+		3F749E842DC8AF8400ED0DB6 /* WeatherViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewModel.swift; sourceTree = "<group>"; };
+		3F749E872DC8B1F900ED0DB6 /* MainWeatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainWeatherView.swift; sourceTree = "<group>"; };
+		3F749E8A2DC8B28400ED0DB6 /* ForecastRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastRow.swift; sourceTree = "<group>"; };
+		3F749E8D2DC8B60B00ED0DB6 /* TopBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopBarView.swift; sourceTree = "<group>"; };
+		3F749E8F2DC8B63400ED0DB6 /* CurrentWeatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentWeatherView.swift; sourceTree = "<group>"; };
+		3F749E922DC8B65C00ED0DB6 /* ForecastListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastListView.swift; sourceTree = "<group>"; };
+		3F749E942DC8B67500ED0DB6 /* BottomBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomBarView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,7 +53,7 @@
 		3F749E602DC89F6E00ED0DB6 = {
 			isa = PBXGroup;
 			children = (
-				3F749E6B2DC89F6E00ED0DB6 /* frog_weather */,
+				3F749E6B2DC89F6E00ED0DB6 /* FrogWeather */,
 				3F749E6A2DC89F6E00ED0DB6 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -48,15 +66,18 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		3F749E6B2DC89F6E00ED0DB6 /* frog_weather */ = {
+		3F749E6B2DC89F6E00ED0DB6 /* FrogWeather */ = {
 			isa = PBXGroup;
 			children = (
+				3F749E7F2DC8ABF500ED0DB6 /* View */,
+				3F749E7E2DC8ABEC00ED0DB6 /* ViewModel */,
+				3F749E7D2DC8ABC400ED0DB6 /* Model */,
 				3F749E6C2DC89F6E00ED0DB6 /* FrogWeatherApp.swift */,
 				3F749E6E2DC89F6E00ED0DB6 /* ContentView.swift */,
 				3F749E702DC89F6F00ED0DB6 /* Assets.xcassets */,
 				3F749E722DC89F6F00ED0DB6 /* Preview Content */,
 			);
-			path = frog_weather;
+			path = FrogWeather;
 			sourceTree = "<group>";
 		};
 		3F749E722DC89F6F00ED0DB6 /* Preview Content */ = {
@@ -65,6 +86,52 @@
 				3F749E732DC89F6F00ED0DB6 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		3F749E7D2DC8ABC400ED0DB6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3F749E802DC8AC1400ED0DB6 /* WeatherModel.swift */,
+				3F749E822DC8ADF400ED0DB6 /* WeatherCondition.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3F749E7E2DC8ABEC00ED0DB6 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				3F749E842DC8AF8400ED0DB6 /* WeatherViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		3F749E7F2DC8ABF500ED0DB6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3F749E892DC8B24200ED0DB6 /* Home */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3F749E892DC8B24200ED0DB6 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				3F749E8C2DC8B5FD00ED0DB6 /* Component */,
+				3F749E872DC8B1F900ED0DB6 /* MainWeatherView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		3F749E8C2DC8B5FD00ED0DB6 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				3F749E8A2DC8B28400ED0DB6 /* ForecastRow.swift */,
+				3F749E8D2DC8B60B00ED0DB6 /* TopBarView.swift */,
+				3F749E8F2DC8B63400ED0DB6 /* CurrentWeatherView.swift */,
+				3F749E922DC8B65C00ED0DB6 /* ForecastListView.swift */,
+				3F749E942DC8B67500ED0DB6 /* BottomBarView.swift */,
+			);
+			path = Component;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +204,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F749E852DC8AF8400ED0DB6 /* WeatherViewModel.swift in Sources */,
+				3F749E932DC8B65C00ED0DB6 /* ForecastListView.swift in Sources */,
+				3F749E8B2DC8B28400ED0DB6 /* ForecastRow.swift in Sources */,
+				3F749E832DC8ADF400ED0DB6 /* WeatherCondition.swift in Sources */,
+				3F749E952DC8B67500ED0DB6 /* BottomBarView.swift in Sources */,
+				3F749E902DC8B63400ED0DB6 /* CurrentWeatherView.swift in Sources */,
+				3F749E882DC8B1F900ED0DB6 /* MainWeatherView.swift in Sources */,
 				3F749E6F2DC89F6E00ED0DB6 /* ContentView.swift in Sources */,
+				3F749E812DC8AC1400ED0DB6 /* WeatherModel.swift in Sources */,
+				3F749E8E2DC8B60B00ED0DB6 /* TopBarView.swift in Sources */,
 				3F749E6D2DC89F6E00ED0DB6 /* FrogWeatherApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -271,7 +347,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"frog_weather/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"frogWeather/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -299,7 +375,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"frog_weather/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"frogWeather/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;

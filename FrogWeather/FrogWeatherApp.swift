@@ -11,7 +11,7 @@ import SwiftUI
 struct FrogWeatherApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MainWeatherView()
         }
     }
 }
